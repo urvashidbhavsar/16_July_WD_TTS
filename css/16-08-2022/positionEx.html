@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer {
+        position: relative;
+      }
+      .back {
+        background-image: url(wallpaper.jpg);
+        height: 500px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .content {
+        width: 100%;
+        position: absolute;
+        /* top: 100px; */
+        bottom: 0;
+        /* right: 0; */
+        text-align: right;
+        font-size: 50px;
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* background-color: aqua; */
+        color: white;
+        text-shadow: 5px 5px 5px black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="wallpaper.jpg" alt="" /> -->
+    <div class="outer">
+      <div class="back"></div>
+      <div class="content">Welcome</div>
+    </div>
+  </body>
+</html>

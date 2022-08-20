@@ -1,0 +1,21 @@
+/* element selector */
+p {
+  background-color: red;
+  color: white;
+}
+/* class selector */
+.para {
+  background-color: red;
+  color: white;
+}
+/*id selector  */
+#para {
+  background-color: red;
+  color: white;
+}
+/* group selector */
+h1,
+h2,
+h3 {
+  color: red;
+}

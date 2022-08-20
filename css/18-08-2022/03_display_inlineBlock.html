@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .inlineex {
+        background-color: aquamarine;
+        height: 100px;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      /* parent child */
+      .inlineex li {
+        display: inline;
+        /* it display all content in one line but not consider height and width */
+        height: 50px;
+        width: 200px;
+        padding: 20px;
+        background-color: beige;
+      }
+
+      .inline-b-ex {
+        background-color: aqua;
+        height: 200px;
+      }
+      .inline-b-ex li {
+        display: inline-block;
+        /* it consider height and width */
+        height: 50px;
+        width: 100px;
+        background-color: bisque;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="inlineex">
+      <li><a href=""> Home </a></li>
+      <li><a href=""> about as </a></li>
+      <li><a href=""> contact </a></li>
+      <li><a href=""> product </a></li>
+      <li><a href=""> services </a></li>
+    </ul>
+
+    <ul class="inline-b-ex">
+      <li><a href=""> Home </a></li>
+      <li><a href=""> about as </a></li>
+      <li><a href=""> contact </a></li>
+      <li><a href=""> product </a></li>
+      <li><a href=""> services </a></li>
+    </ul>
+  </body>
+</html>

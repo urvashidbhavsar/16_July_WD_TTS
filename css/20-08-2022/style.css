@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: cadetblue;
+  width: 100%;
+  display: flex;
+}
+header .logo {
+  width: 30%;
+  padding: 20px;
+  margin-left: 20px;
+}
+header .logo a {
+  font-size: 30px;
+  color: white;
+}
+header .menu {
+  width: 70%;
+  padding: 20px;
+  margin-top: 10px;
+}
+header .menu a {
+  color: white;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+}
+input[type="text"] {
+  border-radius: 20px;
+  height: 20px;
+  width: 150px;
+}
+header .menu ul span {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.main .image {
+  background-image: url(wallpaper.jpg);
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+.main {
+  position: relative;
+}
+.main .content {
+  position: absolute;
+  top: 50px;
+  padding: 40px;
+}
+.main .content p {
+  font-size: 40px;
+  color: white;
+}
+.main .content button {
+  height: 30px;
+  width: 100px;
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+}
+.main .content button:hover {
+  background-color: transparent;
+  color: white;
+}
