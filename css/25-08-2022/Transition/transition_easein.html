@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(98, 98, 182);
+        border: 1px solid black;
+        margin: 5px auto;
+      }
+      div:hover {
+        height: 200px;
+        width: 200px;
+        /* transition: ; */
+        /* transform-origin: ; */
+        /* set delay and duration time in second and milisecond */
+      }
+      #div1 {
+        transition-delay: 1s;
+        transition-duration: 2s;
+        transition-property: all;
+        transition-timing-function: ease;
+      }
+      #div2 {
+        transition: 2s all linear;
+        transition-delay: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+  </body>
+</html>

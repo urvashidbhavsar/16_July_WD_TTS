@@ -1,0 +1,9 @@
+it apply effect smoothly.
+
+common used
+timing-function property :
+ease
+ease-in
+ease-out
+ease-in-out
+linear
