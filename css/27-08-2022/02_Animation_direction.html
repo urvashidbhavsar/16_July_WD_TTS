@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        border: 2px solid teal;
+        background-color: aqua;
+        margin-left: 10px;
+        margin-top: 50px;
+      }
+      @keyframes move_element {
+        from {
+          height: 100px;
+          width: 100px;
+          margin-left: 10px;
+        }
+        to {
+          margin-left: 100px;
+        }
+      }
+      @keyframes move_element1 {
+        from {
+          height: 100px;
+          width: 100px;
+          margin-left: 10px;
+        }
+        to {
+          margin-left: 200px;
+        }
+      }
+      #div1 {
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: move_element 2s linear 2s infinite;
+        /* start with opposite direction */
+        animation-direction: reverse;
+      }
+      #div2 {
+        animation: move_element1 2s ease 2s infinite;
+        /* work alternate-reverse both */
+        animation-direction: alternate-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+  </body>
+</html>

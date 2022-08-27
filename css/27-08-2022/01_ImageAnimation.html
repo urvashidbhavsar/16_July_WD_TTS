@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        border: 2px solid blue;
+      }
+      /* create animation - set animation name */
+      @keyframes image {
+        from {
+          height: 100px;
+          width: 100px;
+        }
+        to {
+          height: 200px;
+          width: 200px;
+        }
+      }
+      #img1 {
+        animation-name: image;
+        animation-timing-function: ease;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-iteration-count: 2;
+        /* transition: 5s all ease; */
+      }
+    </style>
+  </head>
+  <body>
+    <img src="wallpaper.jpg" alt="" height="100px" width="100px" id="img1" />
+  </body>
+</html>
