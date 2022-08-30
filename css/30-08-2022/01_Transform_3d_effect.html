@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        border: 2px solid black;
+        margin: 100px auto;
+        color: white;
+        transition: 2s all ease;
+      }
+      img {
+        height: 100px;
+        width: 100px;
+        transition: 2s all ease;
+        margin-left: 200px;
+      }
+      img:hover {
+        /* x, y, z */
+        /* transform: scale3d(1.5, 1.5, 1.5); */
+        /* give values in pixels */
+        /* transform: translate3d(50px, 50px, 100px); */
+        /* work like a position of a transform */
+        transform: perspective(500px);
+      }
+      #div1:hover {
+        /* x, y, z, angle(degree) */
+        /* transform: rotate3d(90, 90, 90, 360deg); */
+
+        transform: scale3d(1.5, 1.5, 1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">Div 1</div>
+
+    <img src="images/cover-photo.jpg" alt="" />
+    <img src="images/img1.jpg" alt="" />
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- gredient color is combination of the 2 or more colors. -->
+    <style>
+      .div1 {
+        height: 300px;
+        width: 400px;
+        /* linear gredient (direction, color1....color n) */
+        /* directions are : left, right, top, bottom */
+        background-image: linear-gradient(
+          to bottom,
+          rgb(217, 99, 99),
+          rgb(95, 95, 193),
+          rgb(83, 195, 83),
+          rgb(198, 198, 121)
+        );
+      }
+      .div2 {
+        height: 300px;
+        width: 400px;
+        /* set the colors */
+        /* background-image: radial-gradient(red, green, blue, yellow, black); */
+        /* background-image: conic-gradient(red, green, blue, aqua); */
+        border-radius: 50%;
+        background-image: conic-gradient(red 90deg, green 90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+    <br />
+    <div class="div2"></div>
+  </body>
+</html>
