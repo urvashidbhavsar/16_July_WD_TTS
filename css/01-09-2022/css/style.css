@@ -1,0 +1,50 @@
+body {
+  background-image: url(plainimage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.register {
+  margin: 50px auto;
+  height: auto;
+  width: 30%;
+  padding: 20px;
+  background-color: white;
+}
+form {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+h1 {
+  text-align: center;
+}
+input[type="text"] {
+  height: 20px;
+  width: 300px;
+}
+select {
+  height: 30px;
+  width: 300px;
+}
+div {
+  line-height: 30px;
+}
+.btn {
+  height: 30px;
+  width: 300px;
+  background-color: rgb(27, 72, 90);
+  color: white;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+}
+input[type="radio"] {
+  height: 15px;
+  width: 15px;
+  padding: 20px;
+}
+fieldset {
+  /* padding: 20px; */
+}
