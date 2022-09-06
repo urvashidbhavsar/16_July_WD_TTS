@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: aquamarine;
+      }
+      li {
+        float: left;
+      }
+      li.dropdown {
+        display: block;
+      }
+      li a,
+      .dropbtn {
+        display: inline-block;
+        color: blue;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+      }
+      li a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: blue;
+        color: white;
+      }
+
+      .drop-contant {
+        display: none;
+        position: absolute;
+        background-color: bisque;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgb(rgb(170, 94, 94));
+        z-index: 1;
+      }
+      .drop-contant a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .drop-contant a:hover {
+        background-color: burlywood;
+      }
+
+      .dropdown:hover .drop-contant {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="dropdown.html">Home</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">languages</a>
+        <div class="drop-contant">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </li>
+      <li><a href="dropdown.html">About us</a></li>
+      <li><a href="index.html">Contact us</a></li>
+    </ul>
+  </body>
+</html>

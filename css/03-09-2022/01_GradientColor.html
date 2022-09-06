@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        margin: 20px auto;
+        /* set direction left, top, bottom, right */
+        background-image: linear-gradient(
+          to left,
+          #123456,
+          #ab34da,
+          #098765,
+          #abcdef
+        );
+      }
+      .div2 {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        margin: 20px auto;
+        background-image: radial-gradient(
+          #123456 22%,
+          #ab3456 60%,
+          #098765 80%
+        );
+      }
+      .div3 {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        margin: 20px auto;
+        background-image: conic-gradient(
+          #123456 36deg,
+          #ab3456 199deg,
+          #098765 330deg
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+  </body>
+</html>
