@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 200px;
+        width: 300px;
+        margin: 50px auto;
+        padding: 10px;
+        border: 1px solid black;
+        line-height: 25px;
+      }
+      div::first-letter {
+        font-size: 25px;
+        color: blue;
+      }
+      div::first-line {
+        color: brown;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      div::after {
+        content: url(img4.jfif);
+      }
+      div::before {
+        content: icon(\2705);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- psudo class - hover, link, active, visited -->
+
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quasi eos
+      modi laborum dicta harum repellat, in maxime cupiditate quas dolores,
+      veniam aperiam nihil eligendi sequi deserunt incidunt unde molestiae.
+    </div>
+  </body>
+</html>
