@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- MediaQuery -->
+    <!-- mobile screen - 576px - 600px < minimum size > 
+                576px max size
+        tablet ->   768px size
+        leptop screen - 12 to 13 inch -> 992px
+        leptop screen - 15.5 to 16 -> 1200px
+        large screen -> 1400px
+     -->
+    <style>
+      div {
+        background-color: aqua;
+      }
+      @media (max-width: 576px) {
+        div {
+          background-color: red;
+        }
+      }
+      @media (min-width: 576px) {
+        div {
+          background-color: bisque;
+        }
+      }
+      @media (min-width: 768px) {
+        div {
+          background-color: cadetblue;
+        }
+      }
+      @media (min-width: 992px) {
+        div {
+          background-color: chocolate;
+        }
+      }
+      @media (min-width: 1200px) {
+        div {
+          background-color: crimson;
+        }
+      }
+      @media (min-width: 1400px) {
+        div {
+          background-color: cornsilk;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis esse aut
+      velit saepe ipsum aliquid ut inventore explicabo impedit quasi culpa quia,
+      animi odit, magnam quas deserunt soluta sint a. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Dolores explicabo, odit, molestiae non
+      aliquid eius, ducimus tempore eum enim ut quis quos. Similique culpa
+      quibusdam placeat inventore iure voluptate delectus?
+    </div>
+  </body>
+</html>
