@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer {
+        height: 200px;
+        width: 300px;
+      }
+      .image {
+        height: auto;
+        position: relative;
+      }
+      .image-res {
+        height: 200px;
+        width: 300px;
+        /* position: relative; */
+      }
+      .text {
+        position: absolute;
+        color: white;
+        height: 200px;
+        width: 300px;
+      }
+      .image .text {
+        background-color: black;
+        /* top: 0; */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.5;
+        height: 0;
+        overflow: hidden;
+        transition: 1s all ease;
+      }
+      .image:hover .text {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="image">
+        <img src="CSS/banner1.jpg" alt="" class="image-res" />
+        <div class="text">
+          <h4>Products</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
