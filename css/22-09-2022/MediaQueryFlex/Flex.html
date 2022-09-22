@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 200px;
+        width: 300px;
+        padding: 20px;
+      }
+      .main {
+        display: flex;
+        padding: 10px;
+        background-color: cornflowerblue;
+      }
+      @media (max-width: 576px) {
+        .main {
+          /* display: flex;
+          flex-wrap: nowrap;
+          flex-direction: column; */
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+        img {
+          height: 120px;
+          width: 220px;
+          padding: 20px;
+        }
+      }
+      @media (min-width: 576px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 992px) {
+      }
+      @media (min-width: 1200px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="images">
+        <img src="../images/blog1.jpg" alt="" />
+      </div>
+      <div class="images">
+        <img src="../images/blog2.jpg" alt="" />
+      </div>
+      <div class="images">
+        <img src="../images/blog3.jpg" alt="" />
+      </div>
+      <div class="images">
+        <img src="../images/blog4.jpg" alt="" />
+      </div>
+    </div>
+    <div class="main">
+      <div class="images">
+        <img src="../images/blog5.jpg" alt="" />
+      </div>
+      <div class="images">
+        <img src="../images/blog6.jpg" alt="" />
+      </div>
+      <div class="images">
+        <img src="../images/blog7.jpg" alt="" />
+      </div>
+      <div class="images">
+        <img src="../images/blog8.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
