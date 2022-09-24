@@ -1,0 +1,38 @@
+Background
+border
+outline
+font-awesome
+height
+width
+margin
+padding
+color
+text
+table
+form -> input[type="text"]
+cursor
+animation
+transition
+transform
+overflow
+display
+media query
+float
+position
+psudo element ::before :: after ::first-letter
+psudo classes :hover :active :link :visited :nth-child()
+box shadow
+text shadow
+opacity
+filter
+counter
+backface-visibility
+line-height
+word-spacing
+letter-spacing
+text-transform
+font
+background-image : gradient
+z-index
+@keyframes identifier {}
+clipPath
