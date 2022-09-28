@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      .special-menu {
+        background-color: black;
+        color: white;
+        height: auto;
+        padding: 30px;
+      }
+      .special-menu .back-image {
+        background-image: url(smily.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .special-menu .heading h1 {
+        font-size: 0.4in;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+      .special-menu ul {
+        /* display: grid;
+        grid-template-columns: repeat(4, 1fr);*/
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+      }
+      .special-menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.2in;
+      }
+      .special-menu .break-part {
+        border: 1px solid white;
+        height: auto;
+      }
+      .special-menu .inner-menu {
+        padding: 30px;
+      }
+      .special-menu .inner-menu img {
+        height: 100px;
+        width: 100px;
+        border: 2px solid white;
+        border-radius: 50%;
+        outline: 2px solid white;
+        outline-offset: 2px;
+      }
+      .special-menu .inner-menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .special-menu .inner-menu .menus {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+      }
+      .special-menu .inner-menu p {
+        padding: 20px;
+      }
+      .special-menu .inner-menu h4 {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="special-menu">
+      <div class="back-image">
+        <!-- heading part -->
+        <div class="heading container">
+          <h1>Special menu</h1>
+        </div>
+        <!-- menu part -->
+        <ul class="container">
+          <li><a href=""> Breakfast</a></li>
+          <li><a href="">Lunch</a></li>
+          <li><a href=""> To days special</a></li>
+          <li><a href=""> Drinks</a></li>
+        </ul>
+        <!-- menu part with details -->
+        <div class="break-part container">
+          <div class="inner-menu">
+            <div class="menus">
+              <img src="img1.jpg" alt="" />
+              <h4>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                doloribus vel perferendis blanditiis cumque.
+              </h4>
+              <p>$ 50</p>
+            </div>
+            <div class="menus">
+              <img src="img1.jpg" alt="" />
+              <h4>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                doloribus vel perferendis blanditiis cumque.
+              </h4>
+              <p>$ 50</p>
+            </div>
+          </div>
+          <div class="inner-menu">
+            <div class="menus">
+              <img src="img1.jpg" alt="" />
+              <h4>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                doloribus vel perferendis blanditiis cumque.
+              </h4>
+              <p>$ 50</p>
+            </div>
+            <div class="menus">
+              <img src="img1.jpg" alt="" />
+              <h4>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                doloribus vel perferendis blanditiis cumque.
+              </h4>
+              <p>$ 50</p>
+            </div>
+          </div>
+          <div class="inner-menu">
+            <div class="menus">
+              <img src="img1.jpg" alt="" />
+              <h4>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                doloribus vel perferendis blanditiis cumque.
+              </h4>
+              <p>$ 50</p>
+            </div>
+            <div class="menus">
+              <img src="img1.jpg" alt="" />
+              <h4>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                doloribus vel perferendis blanditiis cumque.
+              </h4>
+              <p>$ 50</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
