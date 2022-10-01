@@ -1,0 +1,45 @@
+whats is a Keywords ?
+keywords means reserve words.
+for ex, document
+
+what is variable?
+variable is a container to store a data.
+for ex, Mydiv
+
+right words -> Mydiv, mydiv, myDiv, my_div, my-div, mydiv1
+wrong words, -> my div, 1mydiv
+
+datatypes ?
+which type of your data 
+(1) string - collections of characters for ex, "hello world", "this is javascript language developed in 1995"
+
+(2) number - 12222, 12.22
+(3) boolean - there is two possible value either true or false
+(4) null - means empty or blank
+(5) undefined - which is not defined.
+
+operators?
+types of operators :
+(1) Arithmetic
++, -, *, /, %, ++(increment), --(decrement)
+
+(2) logical 
+&& (and), ||(or), !(not)
+
+(3) assigment
+=, +=, -=, *=, /=, %=
+
+(4) comperision
+< (less than) , > (greather than) , <= , >=, == (equal), != (not equal)
+
+(5) Bitwise (&, |, !)
+
+conditional statement
+
+loop
+
+function
+
+events
+
+events handlers
