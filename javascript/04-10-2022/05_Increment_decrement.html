@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- increment ++
+        there is two type of increment 1) pre-increment 2) post-increment
+
+        for ex, a++ (post-increment) a = a + 1
+                ++a (pre-increment) a + 1 = a
+     -->
+    <script>
+      let a = 5;
+      //   post
+      document.writeln(a++); // first print then increment
+      document.writeln(a);
+
+      // pre
+      a = 6;
+      document.writeln(++a); // a + 1 = a first increment then print
+
+      //   decrement
+      // (1) post decrement (2) pre-decrement
+      document.writeln(a--); //first print then decrement
+      document.writeln(a);
+      document.write(--a); //first decrement then print
+    </script>
+  </body>
+</html>
