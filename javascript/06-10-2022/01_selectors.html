@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- selectors - id, class, name, tagname -->
+    <!-- 
+        selectors -
+        getElementById
+        getElementByClassName
+        getElementByName
+        getElementByTagName
+        querySelector
+
+        innerHTML - display in HTML structure. 
+        innerText - display text in particular element
+     -->
+    <p id="p1"></p>
+    <p class="para"></p>
+    <script>
+      document.write("hello world");
+      //   value get only by id
+      document.getElementById("p1").innerHTML = "Hello world";
+
+      //   value get by id, by class and by element
+      // use # for id selection and .(dot) for class selection
+      document.querySelector(".para").innerHTML = "querySelector";
+    </script>
+  </body>
+</html>

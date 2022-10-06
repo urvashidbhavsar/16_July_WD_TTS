@@ -1,0 +1,26 @@
+functions - 
+there is a two type of functions -
+(1) built-in functions - which is already created in code.
+ex, write(), writeln(), focus(), isNan()
+
+(2) user define functions - which is created by us.
+syntax : 
+
+function function_name(){
+    statements
+}
+
+what is event?
+something performed.
+there is 4 types - mouse, keyboard, form, window.
+ex, mouseover, keypress, submit, click, load
+
+event Handler?
+which is handle events.
+
+ex, onclick, onkeypress, onload, onsubmit
+
+there are 3 types of popup boxes 
+(1) alert - only show notification
+(2) confirm - ask you confirmation about page
+(3) prompt - taken input from user
