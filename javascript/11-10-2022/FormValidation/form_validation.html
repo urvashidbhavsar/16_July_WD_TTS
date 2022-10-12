@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link an external file -->
+    <script src="form_validation.js"></script>
+  </head>
+  <body>
+    <!-- form validation -->
+    <form action="" name="form1" method="post" onsubmit="return validation()">
+      Firstname : <input type="text" name="fname" /> <br /><br />
+
+      Gender : <input type="radio" name="gen" id="gen" />Male
+      <input type="radio" name="gen" id="" />Female
+      <br />
+      <br />
+
+      Hobbies :
+      <input type="checkbox" name="c1" id="" />Playing
+      <input type="checkbox" name="c2" id="" />Singing
+      <input type="checkbox" name="c3" id="" />Dancing <br /><br />
+
+      City :
+      <select name="city" id="">
+        <option value="-1">---select---</option>
+        <option value="">Surat</option>
+        <option value="">Baroda</option>
+      </select>
+      <br /><br />
+
+      password :
+      <input type="password" name="pass" id="" />
+      <br /><br />
+      confirm password :
+      <input type="password" name="cpass" id="" />
+      <br /><br />
+
+      Email :
+      <input type="text" name="email" id="" />
+
+      <br /><br />
+
+      Mobile NO : <input type="text" name="mobileNo" id="" maxlength="10" />
+      <br /><br />
+      <input type="submit" onclick="" value="Check Validation" />
+    </form>
+  </body>
+</html>
