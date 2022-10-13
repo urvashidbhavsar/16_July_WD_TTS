@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <style>
+      header {
+        width: 100%;
+        height: 70px;
+        background-color: rgb(114, 114, 222);
+        color: white;
+      }
+      .header-nav {
+        display: flex;
+        width: 100%;
+      }
+      .header-nav .logo {
+        width: 20%;
+        font-size: 30px;
+        padding: 20px;
+      }
+      .header-nav .menus {
+        width: 80%;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      ul li {
+        padding: 20px;
+      }
+      .disp_menu {
+        display: none;
+        height: 30px;
+        width: 30px;
+      }
+      @media (max-width: 576px) {
+        .header-nav {
+          position: relative;
+        }
+        .disp_menu {
+          position: absolute;
+          right: 33px;
+          top: 26px;
+          display: block;
+        }
+        .menus {
+          display: none;
+        }
+        .show-menu {
+          position: absolute;
+          top: 70px;
+          right: 0px;
+          display: inline-block;
+          width: 200px;
+          background-color: black;
+          padding: 0;
+        }
+        .show-menu ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+        }
+        .show-menu ul li {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="back-image">
+        <div class="header-nav">
+          <div class="logo">
+            <span class="fa-sharp fa-solid fa-star"></span>
+          </div>
+          <div class="menus">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Product</a></li>
+              <li><a href="">About As</a></li>
+              <li><a href="">Contact As</a></li>
+            </ul>
+          </div>
+          <button class="disp_menu">
+            <span class="fa-solid fa-bars"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      let Menu = document.querySelector(".menus");
+      let Disp = document.querySelector(".disp_menu");
+      let headerNav = document.querySelector(".header-nav");
+
+      Disp.addEventListener("click", function () {
+        Menu.classList.toggle("show-menu");
+      });
+
+      Disp.addEventListener("click", function () {
+        Menu.classList.remove("menus");
+      });
+    </script>
+  </body>
+</html>
