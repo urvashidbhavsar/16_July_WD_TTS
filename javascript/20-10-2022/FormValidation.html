@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+      p,
+      span {
+        color: red;
+      }
+      /* #u_name:focus {
+        border: 2px solid red;
+      } */
+    </style>
+  </head>
+  <body>
+    <form action="" name="form1" method="get" onsubmit="return validation()">
+      <label for="">name</label>
+      <input type="text" name="u_name" id="uname" />
+
+      <br /><br />
+      <label for="">Password</label>
+      <input type="password" name="pwd" id="pwd" />
+      <br /><br />
+
+      <label for="">Confirm Password</label>
+      <input type="password" name="cpass" id="cpass" />
+      <span id="c_pass"></span>
+      <br /><br />
+      <input type="submit" name="" value="check" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- what is an array?
+    collection of string.
+    -->
+    <p id="p1"></p>
+    <script>
+      // how to declare an array
+      //   array value start with index number i.e. 0
+      let words = ["apple", "grapes", "bananas", "watermalon"];
+
+      //   array - loop -> for..of loop
+
+      for (let w of words) {
+        document.write(w + "<br>");
+
+        document.getElementById("p1").innerHTML = w;
+      }
+    </script>
+  </body>
+</html>
