@@ -1,0 +1,63 @@
+<!-- not a document type -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+      p,
+      span {
+        color: red;
+      }
+      /* #u_name:focus {
+        border: 2px solid red;
+      } */
+    </style>
+  </head>
+  <body>
+    <form action="" name="form1" method="get" onsubmit="return validation()">
+      <label for="">name</label>
+      <input type="text" name="u_name" id="uname" />
+
+      <br /><br />
+      <label for="">Password</label>
+      <input type="password" name="pwd" id="pwd" />
+      <br /><br />
+
+      <label for="">Confirm Password</label>
+      <input type="password" name="cpass" id="cpass" />
+      <span id="c_pass"></span>
+      <br /><br />
+
+      <label for="">Gender</label>
+      <input type="radio" name="gen" id="male" />Male
+      <input type="radio" name="gen" id="female" />Female
+      <span id="gen_msg"></span>
+      <br /><br />
+
+      <label for="">Qualification</label>
+      <input type="checkbox" name="c1" />10th
+      <input type="checkbox" name="c2" />12th
+      <span id="check_msg"></span>
+      <br /><br />
+
+      <label for="">City</label>
+      <select name="city" id="">
+        <option value="-1">---select city---</option>
+        <option>Surat</option>
+        <option value="">Baroda</option>
+      </select>
+      <span id="city_msg"></span>
+      <br /><br />
+
+      <label for="">Mobile No</label>
+      <input type="text" name="mno" id="" maxlength="10" />
+      <span id="mno_msg"></span>
+      <br /><br />
+      <input type="submit" name="" value="check" />
+    </form>
+  </body>
+</html>
