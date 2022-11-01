@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link online CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#fadein").click(function () {
+          $(".div1").fadeIn(2000);
+        });
+
+        $("#fout").click(function () {
+          $(".div1").fadeOut(2000);
+        });
+      });
+    </script>
+    <style>
+      .div1 {
+        display: none;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(2, 24, 24);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="fadein">Fade In</button>
+    <button id="fout">Fade Out</button>
+    <hr />
+    <div class="div1"></div>
+  </body>
+</html>

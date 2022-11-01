@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link jquery online CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // hide function
+        $("#btn1").click(function () {
+          //   $(".hide").hide();
+          $(".hide").hide(2000);
+        });
+
+        // show function
+        $("#btn2").click(function () {
+          $(".hide").show(5000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="btn1">Hide Function</button>
+    <button id="btn2">Show Function</button>
+    <hr />
+
+    <h1 class="hide">Hello world</h1>
+  </body>
+</html>

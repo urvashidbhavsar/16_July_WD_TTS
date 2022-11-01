@@ -1,0 +1,9 @@
+hide, show and toggle -> work with height, width, margin and padding
+
+fade functions -> work with opacity
+
+
+fadein()
+fadeout()
+fadetoggle()
+fadeto() -> set opacity of content
