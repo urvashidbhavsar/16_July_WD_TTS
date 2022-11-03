@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link online CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $(".div1").fadeTo(1000, 0.5);
+          $(".div2").fadeTo(1000, 0.3);
+          $(".div3").fadeTo(1000, 0.7);
+        });
+      });
+    </script>
+    <style>
+      div {
+        height: 150px;
+        width: 150px;
+      }
+      .div1 {
+        background-color: red;
+      }
+      .div2 {
+        background-color: blue;
+      }
+      .div3 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">fadeTo</button>
+
+    <hr />
+    <div class="div1"></div>
+    <br />
+    <div class="div2"></div>
+    <br />
+    <div class="div3"></div>
+  </body>
+</html>

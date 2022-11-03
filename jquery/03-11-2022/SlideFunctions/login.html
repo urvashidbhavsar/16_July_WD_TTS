@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- copy cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".btn1").click(function () {
+          $(".login-page").slideToggle(5000);
+        });
+      });
+    </script>
+
+    <style>
+      .login-page {
+        display: none;
+        height: 200px;
+        width: 200px;
+        border: 5px double blue;
+        margin: 150px auto;
+        padding: 30px;
+      }
+      input[type="text"],
+      [type="password"] {
+        height: 30px;
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 10px;
+        padding: 3px;
+      }
+      button {
+        height: 30px;
+        width: 100%;
+        border: 2px solid transparent;
+        border-radius: 10px;
+        padding: 3px;
+        background-color: blue;
+        color: white;
+      }
+      span {
+        color: red;
+      }
+    </style>
+    <script>
+      function login_page() {
+        let uname = document.form1.uname.value;
+        let pass = document.form1.pass.value;
+
+        if (uname == "") {
+          //   document.getElementById("uname").innerHTML = "Enter username";
+          document.getElementById("u_name").innerHTML =
+            "<style>#u_name{border: 2px solid red;}</style>";
+          return false;
+        }
+        if (pass == "") {
+          document.getElementById("pwd").innerHTML =
+            "<style>#pwd{border: 2px solid red;}</style>";
+          //   document.getElementById("pass").innerHTML = "Enter Password";
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button class="btn1">Login</button>
+    <div class="login-page">
+      <h3>Login Here</h3>
+      <form action="" name="form1" method="post">
+        <input
+          type="text"
+          name="uname"
+          placeholder="Enter Username"
+          id="u_name"
+        />
+        <span id="uname"></span>
+        <br />
+
+        <input
+          type="password"
+          name="pass"
+          placeholder="Enter Password"
+          id="pwd"
+        />
+        <span id="pass"></span>
+        <br />
+        <button type="submit" onclick="return login_page()">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
