@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- copy cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+      #div1 {
+        height: 100px;
+        width: 100px;
+        background-color: darkgray;
+        position: absolute;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("#div1").animate({
+            left: "250px",
+            top: "250px",
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- animate function used to create simple animation on the page -->
+
+    <button id="btn1">Start Animate</button>
+
+    <hr />
+    <div id="div1"></div>
+  </body>
+</html>

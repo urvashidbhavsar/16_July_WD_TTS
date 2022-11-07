@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- copy cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+      #div1 {
+        display: none;
+        height: 500px;
+        width: 300px;
+        background-color: blueviolet;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#slide").click(function () {
+          $("#div1").slideDown(2000);
+        });
+
+        $("#stop").click(function () {
+          $("#div1").stop();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="slide">SlideDown</button>
+    <button id="stop">Stop</button>
+
+    <hr />
+    <div id="div1"></div>
+  </body>
+</html>

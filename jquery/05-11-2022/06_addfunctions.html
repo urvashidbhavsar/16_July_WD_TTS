@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- copy cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#append").click(function () {
+          // append add content after given text
+          $("h3").append("<span>!!!!</span>");
+        });
+        $("#prepand").click(function () {
+          // append add content before given text
+          $("h3").prepend("<span>@</span>");
+        });
+
+        $("#before").click(function () {
+          $("img").before("<img src='img1.jpg' height='200px' width='200px'>");
+        });
+
+        $("#after").click(function () {
+          $("img").after("<span>!!!</span>");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- add functions : append(), prepand(), before(), after() -->
+
+    <button id="append">Append</button>
+    <button id="prepand">Prepand</button>
+    <button id="before">Before</button>
+    <button id="after">After</button>
+    <hr />
+
+    <h3>Hello world</h3>
+
+    <img src="img1.jpg" alt="" height="100px" width="100px" />
+  </body>
+</html>
