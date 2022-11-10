@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+      div {
+        height: 200px;
+        width: 300px;
+        border: 1px solid black;
+      }
+      .div1 {
+        background-color: aqua;
+        border: 2px solid blue;
+      }
+      .head1 {
+        background-color: lightcoral;
+        color: blue;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#addbtn").click(function () {
+          $("div").addClass("div1");
+        });
+        $("#removebtn").click(function () {
+          $("div").removeClass("div1");
+        });
+
+        $("#togglebtn").click(function () {
+          $("h1").toggleClass("head1");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- css function, addcss->addclass(), removecss-removeclass(),togglecss()- toggleclass() -->
+    <button id="addbtn">Add CSS</button>
+    <button id="removebtn">Remove CSS</button>
+    <button id="togglebtn">Toggle CSS</button>
+    <hr />
+    <div></div>
+    <h1>Hello world</h1>
+  </body>
+</html>
