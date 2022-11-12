@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        // $("p").first().css("color", "red");
+        // $("p").last().css("color", "red");
+
+        // pass index number as parameter.
+        // index number start from 0 position
+        // $("p").eq(2).css("color", "black");
+
+        // $("p").not(".para1").css("color", "red");
+
+        $("p").filter(".para1").css("color", "red");
+      });
+    </script>
+    <style>
+      .main {
+        color: blue;
+        border: 2px dashed magenta;
+      }
+      .sub-main,
+      .sub-main-1 {
+        border: 2px solid palevioletred;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- first(), last(), eq(), not(), filter() -->
+    <div class="main">
+      <div class="sub-main">
+        <p class="para">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum vel
+          rerum nisi enim voluptates hic magni fuga sint debitis quisquam modi
+          ab consequuntur blanditiis pariatur doloribus nulla, doloremque
+          voluptatum voluptas.
+        </p>
+        <p class="para1">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolorum
+          reprehenderit quis neque labore magnam explicabo doloribus
+          perspiciatis consequuntur voluptatibus, exercitationem, voluptas
+          veritatis, tempora laborum repellendus fugit officia a necessitatibus!
+        </p>
+      </div>
+      <div class="sub-main-1">
+        <span class="span1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+          delectus totam deserunt placeat rem aut iure ipsa earum. Corporis qui
+          hic fuga cupiditate vero obcaecati exercitationem quas eos eius
+          reprehenderit?
+        </span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          quasi beatae vitae optio ea iusto quam temporibus porro nostrum sequi
+          quos ducimus voluptate excepturi, autem harum, aut exercitationem.
+          Excepturi, fugit!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
