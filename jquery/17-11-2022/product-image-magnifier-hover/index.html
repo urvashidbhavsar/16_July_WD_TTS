@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Product Image Zoom On Hover Example</title>
+
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			font-family: 'Inter', 'Roboto',sans-serif;
+		}
+		.f {
+			display: flex;
+		}
+		.a {
+			align-items: center;
+		}
+		.j {
+			justify-content: center;
+		}
+		.cn {
+			height: 100vh;
+		}
+		.wp {
+			--t: 900px;
+			width: var(--t);
+		}
+		.wp aside {
+			width: 50%;
+		}
+		.wp aside:last-child {
+			padding: 0 0 0 10px;
+		}
+		.mgt {
+			margin-top: 10px;
+		}
+		/* Zoom styles */
+		.zoom, .original {
+			position: relative;
+		}
+		.zoom {
+			display: inline-block;
+		}
+		.original {
+			cursor: crosshair;
+		}
+		#target {
+			width: calc(var(--t) / 2);
+		}
+		.zoom .viewer {
+			position: absolute;
+			top: 0;
+			left: 100%;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		.zoom .viewer img {
+			position: absolute;
+		}
+		.magnifier {
+			position: absolute;
+			background: #000;
+			opacity: 0.7;
+			top: 0;
+			left: 0;
+		}
+		.magnifier, .viewer {
+			display: none;
+		}
+		.original:hover ~ div {
+			display: block;
+		}
+		.original::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+			<h1>Product Image Zoom On Hover Example</h1>
+	<div class="cn f a j">
+
+		<div class="wp f">
+			<aside>
+				<div class="zoom">
+					<div class="original">
+						<img src="https://source.unsplash.com/pIKQbdSzF_k/1200x1800" id="target">
+					</div>
+					<div class="viewer">
+						<img src="https://source.unsplash.com/pIKQbdSzF_k/1200x1800">
+					</div>
+					<div class="magnifier"></div>
+				</div>	
+			</aside>
+			<aside>
+				<h2>Look this awesome image</h2>
+				<div class="mgt">
+					<input type="range" min="2" max="10" value="2">
+				</div>
+			</aside>
+		</div>
+	</div>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+	<script type="text/javascript" src="js/zoom.js"></script>
+	<script type="text/javascript">
+		var l = $('#target').zoom(2);
+
+		$('input[type="range"]').on('change', function () {
+
+			l.setZoom(this.value);
+
+		});
+	</script>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

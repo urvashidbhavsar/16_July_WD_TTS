@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fwallpapers&psig=AOvVaw3vJFOjkwFlPYvAvWxll4x2&ust=1668743533427000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMCHip2otPsCFQAAAAAdAAAAABAE -->
+    <h1>Product Image Zoom On Hover Example</h1>
+    <div class="cn f a j">
+      <div class="wp f">
+        <aside>
+          <div class="zoom">
+            <div class="original">
+              <img src="img1.jfif" id="target" />
+            </div>
+            <div class="viewer">
+              <img src="img1.jfif" />
+            </div>
+            <div class="magnifier"></div>
+          </div>
+        </aside>
+        <aside>
+          <h2>Look this awesome image</h2>
+          <div class="mgt">
+            <input type="range" min="2" max="10" value="2" />
+          </div>
+        </aside>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/zoom.js"></script>
+    <script src="js/targetZoom.js"></script>
+    <script src="js/pageview.js"></script>
+  </body>
+</html>

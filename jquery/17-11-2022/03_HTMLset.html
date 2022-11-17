@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("#p1").text("hello world!!!");
+        });
+        $("#btn2").click(function () {
+          $("#p1").html("<strong>hello world!!!</strong>");
+        });
+        $("#btn3").click(function () {
+          $("#val").val("Hello user");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- there are 3 functions for set content and attribute 
+        html(), text() and val() -->
+    <button id="btn1">Text</button>
+    <button id="btn2">HTML</button>
+    <button id="btn3">Val</button>
+
+    <p id="p1">this is html content</p>
+
+    <input type="text" name="" id="val" value="html content" readonly />
+  </body>
+</html>
