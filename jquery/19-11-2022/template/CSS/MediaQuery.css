@@ -1,0 +1,44 @@
+@media (max-width: 576px) {
+  header {
+    height: 600px;
+  }
+  .menu-header {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .menu-header .back-image {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+  }
+  .menu-header .back-image .logo {
+    width: 100%;
+    height: 70px;
+  }
+  .menu-header .back-image .navi {
+    width: 100%;
+    height: 70px;
+  }
+  .menu-header .back-image .search {
+    width: 100%;
+    height: 70px;
+  }
+  .content {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+  }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
