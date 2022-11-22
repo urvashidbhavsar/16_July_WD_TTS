@@ -1,0 +1,9 @@
+bootstrap -> mainly css liabrary.
+
+bootstrap website -> getbootstrap.com
+version -> 5.2.2
+
+offline cdn -> download bootstrap package
+online cdn -> copy from original 
+
+all classes for all css property
