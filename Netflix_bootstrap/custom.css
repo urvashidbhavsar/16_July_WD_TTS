@@ -1,0 +1,83 @@
+.back-image {
+  background-image: url(backimage.jpg);
+  height: 650px;
+  width: 100%;
+  filter: brightness(20%);
+  z-index: 0;
+}
+.main-head {
+  background-color: grey;
+  height: 665px;
+}
+.logo-font {
+  font-size: 0.4in;
+}
+.close-btn {
+  background-color: white;
+  /* color: white !important; */
+}
+input[type="text"],
+[type="password"] {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  border-bottom: 2px solid black !important;
+}
+nav {
+  z-index: 1 !important;
+}
+.email-add {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 10px;
+}
+.out-btn {
+  position: absolute;
+  right: 330px;
+  outline-color: white;
+  border-radius: 0 !important;
+}
+.watch-tv img {
+  height: 300px;
+  width: 350px;
+}
+.watch-tv .img-1 {
+  position: relative;
+  z-index: 1;
+}
+.watch-tv .video-container {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+.watch-tv video {
+  height: 252px;
+  width: 255px;
+}
+.download-add .img-3 {
+  height: 322px;
+  width: 465px;
+  margin-left: 30px;
+}
+.download-add .animate {
+  height: 80px;
+  width: 301px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.download-add .animate .img-4 {
+  height: 70px;
+  width: 60px;
+}
+.download-add .animate .img-5 {
+  height: 70px;
+  width: 60px;
+}

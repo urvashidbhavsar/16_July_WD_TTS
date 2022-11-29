@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <section class="main-head bg-secondary">
+      <header class="back-image position-relative"></header>
+      <div class="navigations position-absolute top-0 w-100">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand text-danger fw-bold logo-font" href="#"
+              ><img src="netflix.png" alt="" height="30px" width="100px"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="w-25 d-flex align-items-center justify-content-around">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Language
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Hindi</a></li>
+                </ul>
+              </div>
+              <div class="" id="">
+                <button
+                  class="btn btn-danger"
+                  type="submit"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Sign In
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <div class="position-absolute top-50 text-white text-center w-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Unlimited Moives, TV shows and More.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
+            <form action="" class="mx-5">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="email-add"
+                  placeholder="Enter Email Address"
+                />
+                <button class="input-group-text btn btn-danger out-btn">
+                  Get Started
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-black text-white">
+            <h1 class="modal-title" id="exampleModalLabel">Sign In</h1>
+            <button
+              type="button"
+              class="btn-close close-btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" style="padding: 20px">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Email Address"
+              />
+              <label for=""></label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Enter Password"
+              />
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" />
+                <label for="" class="form-label">Remember Me</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-success">Login</button>
+          </div>
+          <hr />
+          <div class="label">
+            <span>New to Netflix?</span>
+            <a href="" class="" style="text-decoration: none; color: black"
+              >Sign up Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="watch-tv bg-black text-white">
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-6 p-5 align-items-center justify-content-center">
+            <h1 class="pb-4">Enjoy your TV</h1>
+            <p class="h5">
+              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              Blu-ray players and more.
+            </p>
+          </div>
+          <div
+            class="col-6 p-3 img-1 align-items-center justify-content-center text-center"
+          >
+            <img src="tv.png" alt="" class="" />
+            <div class="video-container">
+              <video autoplay controls loop="true">
+                <source src="bootstrapVideo.mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-add bg-black text-white">
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-6 img-2">
+            <img src="mobile-0819.jpg" alt="" class="img-3" />
+            <div class="border border-2 border-secondary rounded-2 animate">
+              <img src="boxshot.png" alt="" class="img-4" />
+              <p>
+                Stranger things
+                <br />
+                <span style="color: blue">Downloading...</span>
+              </p>
+              <img src="download-icon.gif" alt="" class="img-5" />
+            </div>
+          </div>
+          <div class="col-6">
+            <h1>Download your shows to watch offline.</h1>
+            <p>
+              Save your favourites easily and always have something to watch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
