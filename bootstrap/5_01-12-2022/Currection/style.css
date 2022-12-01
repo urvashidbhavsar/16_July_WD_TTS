@@ -1,0 +1,17 @@
+/* img{
+    height:350px;
+    width:230px;
+    border-radius: 10px;
+    transition: 1s all ease;
+} */
+
+/* <-- second section start  ----> */
+.second {
+  background-color: rgb(232, 227, 236);
+  /* height:600px; */
+}
+.second img {
+  height: 300px;
+  width: 370px;
+  border-radius: 10px;
+}
