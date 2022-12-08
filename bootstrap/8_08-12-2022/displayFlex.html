@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        background-color: antiquewhite;
+        display: flex;
+        gap: 20px;
+        padding: 50px;
+      }
+      .main .left-info {
+        padding: 20px;
+        border: 1px solid brown;
+      }
+      .main .right-info {
+        padding: 20px;
+        border: 1px solid brown;
+      }
+      @media (max-width: 576px) {
+        .main {
+          flex-direction: column;
+          padding: 20px;
+        }
+      }
+      @media (min-width: 576px) {
+        .main {
+          flex-direction: column;
+          padding: 20px;
+        }
+      }
+      @media (min-width: 768px) {
+        .main {
+          flex-direction: row;
+        }
+      }
+      @media (min-width: 992px) {
+        .main {
+          padding: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-info">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+          magni itaque sequi rerum dicta quaerat voluptatem voluptas similique
+          inventore corporis? Tenetur maxime eligendi dolores sed totam suscipit
+          odit aliquid doloremque!
+        </p>
+      </div>
+      <div class="right-info">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          eum, voluptatibus officia voluptatum magni perferendis mollitia
+          consectetur nostrum at nobis incidunt nam provident asperiores
+          molestiae officiis error enim, aliquam esse.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
