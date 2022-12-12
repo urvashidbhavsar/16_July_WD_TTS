@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <style>
+      .item {
+        background-color: aqua;
+        height: 100px;
+        width: 100px;
+      }
+      .button1 {
+        height: 40px;
+        width: 100px;
+        border: 2px solid black;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 4,
+          loop: false,
+          center: true,
+          margin: 10,
+          URLhashListener: true,
+          autoplayHoverPause: true,
+          startPosition: "URLHash",
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="owl-carousel owl-theme">
+      <div class="item" data-hash="one"><h2>1</h2></div>
+      <div class="item"><h2>2</h2></div>
+      <div class="item"><h2>3</h2></div>
+      <div class="item"><h2>4</h2></div>
+      <div class="item" data-hash="five"><h2>5</h2></div>
+      <div class="item"><h2>6</h2></div>
+      <div class="item"><h2>7</h2></div>
+      <div class="item"><h2>8</h2></div>
+      <div class="item"><h2>9</h2></div>
+      <div class="item" data-hash="ten"><h2>10</h2></div>
+      <div class="item"><h2>11</h2></div>
+      <div class="item"><h2>12</h2></div>
+      <div class="item"><h2>13</h2></div>
+      <div class="item"><h2>14</h2></div>
+    </div>
+
+    <a href="#one">one</a>
+    <a href="#five">Five</a>
+    <a href="#ten">Ten</a>
+  </body>
+</html>

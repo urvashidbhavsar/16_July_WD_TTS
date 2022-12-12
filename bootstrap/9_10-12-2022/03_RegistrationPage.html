@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- menubar -->
+    <section id="nav">
+      <div class="home-bg-image">
+        <div class="container">
+          <div class="header-nav">
+            <div class="logo">
+              <a href=""><h1>Register</h1></a>
+            </div>
+            <div class="middle-nav">
+              <div class="nav-link">
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Help</a></li>
+                  <li><a href="">Service</a></li>
+                </ul>
+              </div>
+              <div class="search">
+                <button>Search</button>
+              </div>
+            </div>
+            <div class="theme">
+              <span class="fa-solid fa-moon"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- registration page -->
+    <div class="register-form">
+      <form action="" method="get" name="form1">
+        <!--  input type text -->
+        <div class="row">
+          <div class="col"><label for="">First name</label></div>
+          <div class="col">
+            <input type="text" name="fname" id="" />
+            <span id="fmsg"></span>
+          </div>
+        </div>
+
+        <!--  input type radio -->
+        <div class="row">
+          <div class="col"><label for="">Gender</label></div>
+          <div class="col">
+            <input type="radio" name="gen" id="" />
+            <label for="">Male</label>
+            <input type="radio" name="gen" id="" />
+            <label for="">Female</label>
+            <span id="gmsg"></span>
+          </div>
+        </div>
+
+        <!--  input type checkbox -->
+        <div class="row">
+          <div class="col"><label for="">Subjects</label></div>
+          <div class="col">
+            <input type="checkbox" name="c1" id="" />
+            <label for="">HTML</label>
+            <input type="checkbox" name="c2" id="" />
+            <label for="">CSS</label>
+            <input type="checkbox" name="c3" id="" />
+            <label for="">Js</label>
+            <span id="cmsg"></span>
+          </div>
+        </div>
+
+        <!-- textarea -->
+        <div class="row">
+          <div class="col"><label for="">Address</label></div>
+          <div class="col">
+            <textarea name="address" id="" cols="30" rows="5"></textarea>
+            <span id="addmsg"></span>
+          </div>
+        </div>
+
+        <!-- select-option -->
+        <div class="row">
+          <div class="col"><label for="">Experiance</label></div>
+          <div class="col">
+            <select name="exp" id="">
+              <option value="-1">---select---</option>
+              <option value="">1 &lt;</option>
+              <option value="">1 &gt;</option>
+            </select>
+            <span id="dropmsg"></span>
+          </div>
+        </div>
+
+        <!-- email -->
+        <div class="row">
+          <div class="col"><label for="">Email</label></div>
+          <div class="col">
+            <input type="text" name="mail" id="" />
+            <span id="emasg"></span>
+          </div>
+        </div>
+
+        <!-- mobile no -->
+        <div class="row">
+          <div class="col"><label for="">Mobile no</label></div>
+          <div class="col">
+            <input type="text" name="mno" id="" />
+            <span id="mo_msg"></span>
+          </div>
+        </div>
+
+        <!-- password -->
+        <div class="row">
+          <div class="col"><label for="">password</label></div>
+          <div class="col">
+            <input type="password" name="sec" id="" />
+            <span id="sec_msg"></span>
+          </div>
+        </div>
+
+        <!-- mobile no -->
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <input type="checkbox" />
+            <label for="">Show Password</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
