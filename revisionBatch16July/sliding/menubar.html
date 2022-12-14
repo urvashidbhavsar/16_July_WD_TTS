@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="menubar.css" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".disp-menu").click(function () {
+          $(".menus").slideDown();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <section id="nav">
+      <div class="home-bg-image">
+        <div class="container">
+          <div class="header-nav">
+            <div class="logo">
+              <a href=""><h1>Register</h1></a>
+            </div>
+            <div class="middle-nav">
+              <div class="nav-link">
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Help</a></li>
+                  <li><a href="">Service</a></li>
+                </ul>
+              </div>
+              <div class="search">
+                <button class="btn1">Search</button>
+              </div>
+            </div>
+            <div class="theme">
+              <span class="fa-solid fa-moon"></span>
+            </div>
+            <button class="disp-menu">
+              <span class="fa-solid fa-bars"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // id, class, element
+      let disp_menu = document.querySelector(".disp-menu");
+      let nav_links = document.querySelector(".nav-link");
+
+      disp_menu.addEventListener("click", function () {
+        console.log("hello");
+        nav_links.classList.toggle("menus");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+body {
+  background: conic-gradient(#123456, #ab6755, #c16970, #123456);
+}
+#nav .home-bg-image {
+  background-color: rgb(104, 66, 15);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 1s ease all;
+}
+.home-bg-image .container {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.home-bg-image .header-nav {
+  padding: 20px;
+  display: flex;
+}
+.home-bg-image .header-nav .logo {
+  flex: 1;
+  padding: 30px 0px;
+}
+.home-bg-image .header-nav .middle-nav {
+  flex: 3;
+  display: flex;
+}
+.home-bg-image .header-nav .middle-nav .nav-link {
+  flex: 2;
+  padding: 20px 0px;
+}
+.home-bg-image .header-nav .middle-nav .nav-link ul {
+  display: flex;
+  justify-content: space-between;
+}
+.home-bg-image .header-nav .nav-link li {
+  padding: 20px;
+}
+.home-bg-image .header-nav .middle-nav .search {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.home-bg-image .header-nav .middle-nav .btn1 {
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  border: none;
+  background: #ffffff63;
+  color: white;
+  font-weight: 800;
+}
+.home-bg-image .header-nav .theme {
+  flex: 1;
+  padding: 35px 0px;
+}
+.home-bg-image .header-nav .theme span {
+  font-size: 30px;
+}
+.home-bg-image .header-nav .disp-menu {
+  height: 40px;
+  width: 40px;
+  margin: 30px 3px;
+  display: none;
+}
+@media (max-width: 576px) {
+  .home-bg-image .header-nav .disp-menu {
+    display: block;
+    position: relative;
+    z-index: 0;
+  }
+  .home-bg-image .header-nav .middle-nav .nav-link {
+    display: none;
+  }
+  .home-bg-image .header-nav .middle-nav .menus {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 200px;
+    display: block;
+    background-color: #123456;
+    transition: 1s all ease;
+  }
+  .home-bg-image .header-nav .middle-nav .menus ul {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .home-bg-image .header-nav .nav-link li {
+    padding: 20px;
+  } */
+}
